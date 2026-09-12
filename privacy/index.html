@@ -14,7 +14,7 @@
   <style>
     body {
       font-family: Arial, "Noto Sans KR", sans-serif;
-      max-width: 820px;
+      max-width: 860px;
       margin: 0 auto;
       padding: 40px 20px 80px;
       line-height: 1.75;
@@ -22,16 +22,19 @@
       background: #fff;
     }
 
-    h1 {
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      margin-top: 36px;
-    }
+    h1 { margin-bottom: 8px; }
+    h2 { margin-top: 40px; }
+    h3 { margin-top: 26px; }
 
     .sub {
       color: #666;
+    }
+
+    .info {
+      margin: 22px 0;
+      padding: 16px 18px;
+      background: #f5f7fa;
+      border-radius: 10px;
     }
 
     .lang {
@@ -39,6 +42,35 @@
       padding: 12px 16px;
       background: #f5f7fa;
       border-radius: 10px;
+    }
+
+    .notice {
+      margin: 20px 0;
+      padding: 16px 18px;
+      background: #f8fbff;
+      border-left: 4px solid #1769e0;
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 26px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f5f7fa;
+    }
+
+    ul {
+      padding-left: 24px;
     }
 
     a {
@@ -51,17 +83,18 @@
     }
 
     hr {
-      margin: 60px 0;
+      margin: 64px 0;
       border: 0;
       border-top: 1px solid #ddd;
     }
 
-    ul {
-      padding-left: 24px;
-    }
-
     .top-link {
       margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .small {
+      color: #666;
       font-size: 14px;
     }
   </style>
@@ -76,74 +109,131 @@
 <h1>회선알라미 개인정보처리방침</h1>
 <p class="sub">Privacy Policy for Line Reminder</p>
 
+<div class="info">
+  운영자: Studio Monmal<br>
+  앱: 회선알라미 (Line Reminder)<br>
+  시행일: 2026년 9월 13일<br>
+  최종 수정일: 2026년 9월 13일<br>
+  문의:
+  <a href="mailto:studiomonmal@gmail.com">
+    studiomonmal@gmail.com
+  </a>
+</div>
+
 <div class="lang">
   <a href="#ko">한국어</a>
   &nbsp;|&nbsp;
   <a href="#en">English</a>
 </div>
 
+
 <section id="ko">
 
 <h2>1. 개요</h2>
 
 <p>
-Studio Monmal이 제공하는 회선알라미는 사용자가 여러 통신 회선,
-일정, 요금제, USIM/eSIM, 혜택 등의 정보를 직접 관리할 수 있도록
+Studio Monmal이 제공하는 회선알라미는 사용자가 여러 이동통신 회선,
+일정, 요금제, USIM/eSIM, 기기, 혜택 등의 정보를 직접 관리할 수 있도록
 제공되는 Android 애플리케이션입니다.
 </p>
 
 <p>
-회선알라미는 별도의 회원가입 시스템이나
-Studio Monmal이 운영하는 사용자 계정 서버를 사용하지 않습니다.
-사용자가 앱에 입력한 데이터는 원칙적으로 사용자의 기기 내부에 저장됩니다.
+회선알라미는 별도의 회원가입 시스템이나 Studio Monmal이 운영하는
+사용자 계정 서버를 사용하지 않습니다.
+사용자가 앱에 입력한 데이터는 원칙적으로 사용자의 기기 내부에서 처리되고 저장됩니다.
 </p>
 
 
-<h2>2. 앱에서 처리할 수 있는 정보</h2>
+<h2>2. 처리하는 정보</h2>
 
 <p>
-사용자가 회선알라미의 기능을 이용하는 과정에서
-다음과 같은 정보를 직접 입력하거나 저장할 수 있습니다.
+회선알라미는 사용자가 직접 입력하거나 선택한 다음 정보를 처리할 수 있습니다.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>정보 유형</th>
+      <th>사용 목적</th>
+      <th>기본 저장 위치</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>전화번호 및 회선 정보</td>
+      <td>회선 관리 및 일정·혜택 연결</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+    <tr>
+      <td>통신사 및 요금제 정보</td>
+      <td>요금제·유지기간 및 회선 이력 관리</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+    <tr>
+      <td>개통일, 번호이동일, 유지기간, 일정</td>
+      <td>일정 및 알림 제공</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+    <tr>
+      <td>USIM/eSIM 및 기기 연결 정보</td>
+      <td>회선·SIM·기기 관계 관리</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+    <tr>
+      <td>결제수단 관련 관리 정보</td>
+      <td>사용자가 입력한 결제수단 관리</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+    <tr>
+      <td>프로모션 및 혜택 정보</td>
+      <td>혜택 일정 및 수령 이력 관리</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+    <tr>
+      <td>메모</td>
+      <td>사용자 기록 관리</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+    <tr>
+      <td>이미지, PDF 및 문서</td>
+      <td>프로모션 및 관련 자료 보관</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+    <tr>
+      <td>Telegram Bot Token 및 Chat ID</td>
+      <td>사용자가 선택한 Telegram 알림 전송</td>
+      <td>사용자 기기 내부</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h2>3. Studio Monmal 자체 서버를 통한 수집</h2>
+
+<p>
+회선알라미는 사용자의 전화번호, 회선 정보, 일정, 요금제,
+첨부파일 또는 기타 앱 데이터를 Studio Monmal이 운영하는 별도의 서버로
+수집하거나 저장하지 않습니다.
+</p>
+
+<p>
+현재 회선알라미에는 다음 기능이 포함되어 있지 않습니다.
 </p>
 
 <ul>
-  <li>전화번호 및 회선 정보</li>
-  <li>통신사 및 요금제 정보</li>
-  <li>개통일, 번호이동일, 유지기간 및 일정 정보</li>
-  <li>USIM/eSIM 정보</li>
-  <li>기기 및 SIM 연결 정보</li>
-  <li>결제수단 관련 관리 정보</li>
-  <li>프로모션 및 혜택 정보</li>
-  <li>사용자가 작성한 메모</li>
-  <li>사용자가 선택한 이미지, PDF 및 문서 첨부파일</li>
-  <li>Telegram 알림 기능 사용 시 Bot Token 및 Chat ID</li>
+  <li>광고 SDK</li>
+  <li>사용자 행동 분석 SDK</li>
+  <li>광고 추적 시스템</li>
+  <li>Studio Monmal 자체 사용자 계정 서버</li>
+  <li>Studio Monmal 자체 클라우드 동기화 서버</li>
 </ul>
 
-<p>
-이 정보는 회선알라미의 기능을 제공하기 위해
-사용자의 기기 내부에서 처리됩니다.
-</p>
 
-
-<h2>3. Studio Monmal 자체 서버를 통한 데이터 수집</h2>
+<h2>4. Telegram 알림 및 외부 전송</h2>
 
 <p>
-회선알라미는 사용자의 회선 정보, 전화번호, 일정,
-첨부파일 등을 Studio Monmal이 운영하는 별도의 서버로
-전송하거나 저장하지 않습니다.
-</p>
-
-<p>
-현재 회선알라미에는 광고 SDK,
-사용자 행동 분석 SDK 또는 별도의 사용자 추적 시스템이 포함되어 있지 않습니다.
-</p>
-
-
-<h2>4. Telegram 알림</h2>
-
-<p>
-Telegram 알림은 선택 기능이며,
-사용자가 직접 기능을 활성화하고 필요한 설정을 완료한 경우에만 사용됩니다.
+Telegram 알림은 선택적인 유료 기능이며,
+사용자가 직접 기능을 설정하고 활성화한 경우에만 사용됩니다.
 </p>
 
 <p>
@@ -152,148 +242,291 @@ Bot Token과 Chat ID를 직접 입력해야 합니다.
 </p>
 
 <p>
-Telegram 알림 기능이 활성화되면
-다음과 같은 정보가 Telegram 서버로 전송될 수 있습니다.
+Telegram 알림이 활성화되면 알림 제공을 위해 다음 정보가
+Telegram 서비스로 전송될 수 있습니다.
 </p>
 
 <ul>
   <li>일정 또는 혜택 알림 제목</li>
   <li>관련 회선의 전화번호</li>
-  <li>일정 또는 혜택의 날짜와 내용</li>
-  <li>혜택 이름 및 관련 금액 정보</li>
+  <li>일정 날짜 및 알림 내용</li>
+  <li>혜택 이름 및 관련 금액</li>
 </ul>
 
+<table>
+  <thead>
+    <tr>
+      <th>수신 서비스</th>
+      <th>목적</th>
+      <th>전송 방식</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Telegram</td>
+      <td>사용자가 설정한 Telegram Bot 대화방으로 알림 전달</td>
+      <td>Telegram Bot API를 통한 HTTPS 통신</td>
+    </tr>
+  </tbody>
+</table>
+
 <p>
-해당 정보의 Telegram 서버 처리에는
-Telegram의 개인정보처리방침 및 서비스 정책이 적용됩니다.
+Telegram은 Studio Monmal과 별개의 제3자 서비스입니다.
+Telegram으로 전송된 정보의 처리, 저장 위치 및 보유기간에는
+Telegram의 개인정보처리방침과 서비스 정책이 적용됩니다.
+</p>
+
+<p>
+Telegram 서비스의 시스템 또는 서버가 대한민국 외 지역에서 운영될 수 있으므로,
+Telegram 기능을 사용하는 경우 정보가 국외에서 처리될 수 있습니다.
+구체적인 처리 지역과 보유기간은 Telegram의 현재 서비스 운영 및 정책에 따릅니다.
+</p>
+
+<p>
+사용자는 Telegram 기능을 사용하지 않거나 앱 내 Telegram 기능을 비활성화함으로써
+향후 해당 기능을 통한 정보 전송을 중단할 수 있습니다.
+</p>
+
+<p>
+이미 Telegram으로 전송된 메시지는 회선알라미에서 기능을 비활성화하거나
+앱을 삭제하더라도 자동으로 삭제되지 않습니다.
 </p>
 
 <p>
 Studio Monmal은 Telegram으로 전송된 메시지를
-별도의 자체 서버에 복사하거나 저장하지 않습니다.
+Studio Monmal의 자체 서버에 별도로 복사하거나 저장하지 않습니다.
 </p>
 
 
-<h2>5. 첨부파일</h2>
+<h2>5. Telegram 인증정보 보관</h2>
+
+<p>
+사용자가 입력한 Telegram Bot Token과 Chat ID는
+회선알라미의 앱 전용 로컬 저장공간에 저장됩니다.
+</p>
+
+<p>
+해당 정보는 다른 일반 앱 데이터와 마찬가지로 Android의 앱별 저장공간 및
+운영체제 보안 구조의 보호를 받습니다.
+</p>
+
+<p>
+Bot Token과 Chat ID는 사용자가 생성하는 암호화 통합백업에 포함될 수 있으므로,
+백업 파일과 백업 비밀번호를 안전하게 관리해야 합니다.
+</p>
+
+
+<h2>6. 첨부파일</h2>
 
 <p>
 사용자가 선택한 이미지, PDF 또는 문서는
-회선알라미의 앱 내부 저장공간에 복사되어 관리될 수 있습니다.
+회선알라미의 앱 전용 내부 저장공간에 복사되어 관리될 수 있습니다.
 </p>
 
 <p>
-회선알라미는 Android의 시스템 파일 선택 기능 및 Photo Picker를 사용하며,
+회선알라미는 Android의 Photo Picker 및 시스템 파일 선택 기능을 사용하며,
 사용자의 전체 저장공간에 대한 광범위한 접근 권한을 요구하지 않습니다.
 </p>
 
 
-<h2>6. 백업 및 복원</h2>
+<h2>7. 백업 및 복원</h2>
 
 <p>
 사용자는 회선알라미의 통합 백업 기능을 이용하여
-앱 데이터를 직접 내보낼 수 있습니다.
+앱 데이터와 첨부파일을 직접 내보낼 수 있습니다.
 </p>
 
 <p>
-백업 파일에는 회선 정보, 일정, 설정, 첨부파일 및
-Telegram 설정 등이 포함될 수 있습니다.
-</p>
-
-<p>
-백업 파일은 사용자가 지정한 비밀번호를 기반으로 암호화됩니다.
-</p>
-
-<p>
-백업 저장 위치는 사용자가 Android 시스템 파일 선택 화면에서 직접 결정합니다.
-Google Drive 등 외부 저장소 제공자를 선택한 경우
-해당 서비스 제공자의 정책이 추가로 적용될 수 있습니다.
-</p>
-
-<p>
-회선알라미를 삭제하더라도 사용자가 외부로 내보낸 백업 파일은
-자동으로 삭제되지 않습니다.
-</p>
-
-
-<h2>7. Google Play 결제</h2>
-
-<p>
-회선알라미는 일부 기능에 대해
-Google Play 인앱 결제를 사용할 수 있습니다.
-</p>
-
-<p>
-결제 및 결제수단 정보는 Google Play가 처리합니다.
-Studio Monmal은 사용자의 신용카드 번호 또는
-Google Play 결제수단 정보를 직접 수집하거나 저장하지 않습니다.
-</p>
-
-<p>
-회선알라미는 구매한 기능의 사용 권한을 확인하기 위해
-Google Play가 제공하는 구매 상태 정보를 확인할 수 있습니다.
-</p>
-
-<p>
-구매 권한은 회선알라미의 일반 데이터 백업에 포함되지 않습니다.
-구매한 상품의 소유 여부는 Google Play 계정의 구매 상태를 기준으로 확인합니다.
-</p>
-
-
-<h2>8. Android 권한</h2>
-
-<p>
-회선알라미는 앱 기능 제공을 위해
-다음과 같은 Android 권한을 사용할 수 있습니다.
+백업에는 다음 정보가 포함될 수 있습니다.
 </p>
 
 <ul>
-  <li>알림을 표시하기 위한 알림 권한</li>
-  <li>지정된 시간에 일정 알림을 제공하기 위한 알람 관련 권한</li>
-  <li>기기 재부팅 이후 알림 일정을 복원하기 위한 권한</li>
-  <li>Telegram 알림 등 외부 통신을 위한 인터넷 접근</li>
+  <li>회선 및 전화번호 이력</li>
+  <li>가입 및 요금제 이력</li>
+  <li>USIM/eSIM 및 기기 정보</li>
+  <li>일정 및 혜택 정보</li>
+  <li>메모와 첨부파일</li>
+  <li>앱 설정</li>
+  <li>Telegram 설정 및 Bot Token, Chat ID</li>
 </ul>
 
 <p>
-회선알라미는 다른 애플리케이션의 알림 내용을 읽기 위한
+통합 백업 파일은 사용자가 지정한 비밀번호를 기반으로
+AES-256-GCM 방식으로 암호화됩니다.
+</p>
+
+<p>
+백업 저장 위치는 사용자가 Android 시스템 파일 선택 화면에서 직접 선택합니다.
+Google Drive 등 외부 저장소 제공자를 선택한 경우
+해당 서비스 제공자의 개인정보 및 보안 정책도 적용됩니다.
+</p>
+
+<p>
+Studio Monmal은 사용자가 내보낸 백업 파일을 자체 서버에 저장하지 않습니다.
+</p>
+
+
+<h2>8. Google Play 결제</h2>
+
+<p>
+회선알라미는 일부 기능을 Google Play의 비소비성 1회성 인앱상품으로 제공합니다.
+</p>
+
+<p>
+결제 및 결제수단 정보는 Google Play가 직접 처리합니다.
+Studio Monmal은 사용자의 신용카드 번호 또는 Google Play 결제수단 정보를
+직접 수집하거나 저장하지 않습니다.
+</p>
+
+<p>
+회선알라미는 구매 기능의 사용 가능 여부를 확인하기 위해
+Google Play가 제공하는 상품 소유 및 구매 상태 정보를 확인할 수 있습니다.
+</p>
+
+<p>
+회선알라미의 일반 통합백업에는 구매 권한 자체를 저장하지 않습니다.
+구매 상품의 소유 여부는 Google Play 계정의 구매 상태를 기준으로 확인합니다.
+</p>
+
+
+<h2>9. 보안조치</h2>
+
+<p>
+Studio Monmal은 앱이 처리하는 데이터의 보호를 위해
+현재 앱 구조에서 다음과 같은 조치를 적용하고 있습니다.
+</p>
+
+<ul>
+  <li>일반 앱 데이터 및 첨부파일을 앱 전용 내부 저장공간에 보관</li>
+  <li>사용자의 전체 저장공간에 대한 광범위한 접근 권한을 사용하지 않음</li>
+  <li>통합 백업 파일에 AES-256-GCM 암호화 적용</li>
+  <li>백업 비밀번호를 기반으로 한 키 파생 처리</li>
+  <li>Telegram API 통신 시 HTTPS 사용</li>
+  <li>Studio Monmal 자체 데이터 수집 서버를 운영하지 않음</li>
+  <li>광고 및 행동 분석 SDK를 사용하지 않음</li>
+</ul>
+
+<div class="notice">
+  인터넷 또는 전자적 저장 방식은 절대적인 보안을 보장할 수 없습니다.
+  사용자는 기기의 화면 잠금, Google 계정 보안,
+  Telegram Bot Token 및 백업 비밀번호를 안전하게 관리해야 합니다.
+</div>
+
+
+<h2>10. Android 권한</h2>
+
+<p>
+회선알라미는 기능 제공을 위해 다음 Android 권한을 사용할 수 있습니다.
+</p>
+
+<ul>
+  <li>알림 표시를 위한 권한</li>
+  <li>정확한 일정 알림 예약을 위한 알람 관련 권한</li>
+  <li>기기 재부팅 또는 시간 변경 이후 알림 재예약을 위한 권한</li>
+  <li>Telegram Bot API 통신을 위한 인터넷 접근</li>
+</ul>
+
+<p>
+회선알라미는 다른 앱의 알림을 읽기 위한
 Notification Listener 권한을 사용하지 않습니다.
 </p>
 
-
-<h2>9. 데이터 삭제</h2>
-
 <p>
-사용자는 앱 내에서 자신이 입력한 정보를 수정하거나 삭제할 수 있습니다.
-</p>
-
-<p>
-회선알라미를 삭제하면 기기 내부에 저장된 앱 데이터는
-Android의 일반적인 앱 삭제 방식에 따라 제거됩니다.
-</p>
-
-<p>
-단, 사용자가 외부로 내보낸 백업 파일이나
-이미 Telegram으로 전송된 메시지는
-회선알라미를 삭제하는 것만으로 자동 삭제되지 않습니다.
+SMS 또는 MMS 메시지를 읽기 위한 권한도 사용하지 않습니다.
 </p>
 
 
-<h2>10. 개인정보처리방침 변경</h2>
+<h2>11. 데이터 보유기간</h2>
+
+<p>
+사용자가 앱에 직접 저장한 정보는 사용자가 직접 삭제하거나,
+회선알라미 앱 데이터가 삭제되거나,
+앱이 제거될 때까지 기기 내부에 보관될 수 있습니다.
+</p>
+
+<p>
+Studio Monmal은 해당 데이터를 자체 서버에 보유하지 않으므로
+Studio Monmal 서버에서 별도의 보유기간을 운영하지 않습니다.
+</p>
+
+<p>
+사용자가 외부로 내보낸 백업파일은 사용자가 직접 삭제할 때까지
+선택한 저장 위치에 남을 수 있습니다.
+</p>
+
+<p>
+Telegram으로 전송된 정보의 보유기간과 삭제 방식은
+Telegram 서비스의 정책 및 사용자의 Telegram 관리 방식에 따릅니다.
+</p>
+
+<p>
+Google Play 구매정보의 보유 및 결제 관련 처리는
+Google의 정책에 따릅니다.
+</p>
+
+
+<h2>12. 데이터 삭제</h2>
+
+<p>
+사용자는 앱에서 제공되는 수정 또는 삭제 기능을 이용해
+앱 내부 데이터를 직접 관리할 수 있습니다.
+</p>
+
+<p>
+앱을 제거하거나 Android 설정에서 앱 데이터를 삭제하면
+회선알라미의 로컬 데이터는 Android의 일반적인 앱 데이터 삭제 방식에 따라 제거됩니다.
+</p>
+
+<p>
+다음 정보는 앱 삭제만으로 자동 삭제되지 않을 수 있습니다.
+</p>
+
+<ul>
+  <li>사용자가 외부 저장 위치로 내보낸 백업파일</li>
+  <li>이미 Telegram으로 전송된 메시지</li>
+  <li>Google Play가 관리하는 구매기록</li>
+</ul>
+
+<p>
+해당 데이터는 각각 사용자가 선택한 외부 저장소,
+Telegram 및 Google Play에서 관리해야 합니다.
+</p>
+
+
+<h2>13. 아동의 개인정보</h2>
+
+<p>
+회선알라미는 아동을 대상으로 특별히 설계된 서비스가 아닙니다.
+</p>
+
+<p>
+앱의 실제 대상 연령 및 Google Play의 대상 사용자 설정은
+Google Play Console에 등록된 정보에 따릅니다.
+</p>
+
+
+<h2>14. 개인정보처리방침 변경</h2>
 
 <p>
 앱 기능 또는 데이터 처리 방식이 변경되는 경우
-본 개인정보처리방침이 수정될 수 있습니다.
+본 개인정보처리방침도 변경될 수 있습니다.
 </p>
 
 <p>
-중요한 변경이 있는 경우 이 페이지 또는
-앱 업데이트 등을 통해 안내할 수 있습니다.
+중요한 변경이 있는 경우 이 페이지 또는 앱 업데이트 등을 통해 안내하며,
+상단의 최종 수정일을 갱신합니다.
 </p>
 
 
-<h2>11. 문의</h2>
+<h2>15. 문의</h2>
+
+<p>
+개인정보 보호 및 앱 데이터 처리에 관한 문의:
+</p>
 
 <p>
 운영자: Studio Monmal<br>
+앱: 회선알라미 (Line Reminder)<br>
 이메일:
 <a href="mailto:studiomonmal@gmail.com">
 studiomonmal@gmail.com
@@ -310,25 +543,38 @@ studiomonmal@gmail.com
 
 <h1>Privacy Policy for Line Reminder</h1>
 
+<div class="info">
+  Developer: Studio Monmal<br>
+  Application: Line Reminder (회선알라미)<br>
+  Effective date: September 13, 2026<br>
+  Last updated: September 13, 2026<br>
+  Contact:
+  <a href="mailto:studiomonmal@gmail.com">
+    studiomonmal@gmail.com
+  </a>
+</div>
+
+
 <h2>1. Overview</h2>
 
 <p>
 Line Reminder, provided by Studio Monmal, is an Android application
-that helps users manage multiple mobile lines, schedules,
-mobile plans, USIM/eSIM information, and related benefits.
+designed to help users manage multiple mobile lines, schedules,
+mobile plans, USIM/eSIM information, devices, and related benefits.
 </p>
 
 <p>
-Line Reminder does not operate its own user account system
-or a user account server operated by Studio Monmal.
-Data entered by users is generally stored locally on the user's device.
+Line Reminder does not operate its own user account system or
+a user account server operated by Studio Monmal.
+Data entered into the app is generally processed and stored locally
+on the user's device.
 </p>
 
 
 <h2>2. Information Processed by the App</h2>
 
 <p>
-Users may enter or store information including:
+Users may directly enter or select information including:
 </p>
 
 <ul>
@@ -337,135 +583,198 @@ Users may enter or store information including:
   <li>Activation dates, porting dates, retention periods, and schedules</li>
   <li>USIM/eSIM information</li>
   <li>Device and SIM assignment information</li>
-  <li>Payment-method management information</li>
-  <li>Promotion and benefit information</li>
+  <li>Payment-method management information entered by the user</li>
+  <li>Promotions and benefit information</li>
   <li>User-created notes</li>
   <li>Images, PDFs, and documents selected by the user</li>
   <li>Telegram Bot Token and Chat ID when Telegram notifications are used</li>
 </ul>
 
 <p>
-This information is processed locally on the user's device
-to provide the functions of Line Reminder.
+This information is generally processed locally on the user's device
+for application functionality.
 </p>
 
 
-<h2>3. Data Collection by Studio Monmal Servers</h2>
+<h2>3. Collection by Studio Monmal Servers</h2>
 
 <p>
-Line Reminder does not transmit or store users' mobile line information,
-phone numbers, schedules, or attachments on servers operated by Studio Monmal.
+Line Reminder does not transmit or store users' phone numbers,
+mobile line information, schedules, plans, or attachments
+on servers operated by Studio Monmal.
 </p>
 
 <p>
-The app currently does not include advertising SDKs,
-behavioral analytics SDKs, or independent user-tracking systems.
+The application currently does not contain:
 </p>
 
+<ul>
+  <li>Advertising SDKs</li>
+  <li>Behavioral analytics SDKs</li>
+  <li>Advertising tracking systems</li>
+  <li>A Studio Monmal user account server</li>
+  <li>A Studio Monmal cloud synchronization server</li>
+</ul>
 
-<h2>4. Telegram Notifications</h2>
+
+<h2>4. Telegram Notifications and External Transmission</h2>
 
 <p>
-Telegram notifications are optional and are used only when
-the user explicitly enables and configures the feature.
+Telegram notifications are an optional paid feature and are used only
+when the user explicitly configures and enables the feature.
 </p>
 
 <p>
-Users must provide the Bot Token and Chat ID
-of a Telegram bot they create or manage.
+Users must provide the Bot Token and Chat ID of a Telegram bot
+they create or manage.
 </p>
 
 <p>
-When Telegram notifications are enabled,
-information sent to Telegram may include:
+When enabled, information sent to Telegram may include:
 </p>
 
 <ul>
   <li>Schedule or benefit notification titles</li>
   <li>Related phone numbers</li>
   <li>Dates and notification details</li>
-  <li>Benefit names and related amounts</li>
+  <li>Benefit names and related monetary amounts</li>
 </ul>
 
 <p>
-Information sent to Telegram is subject to Telegram's own
+The information is transmitted to Telegram using the Telegram Bot API over HTTPS.
+</p>
+
+<p>
+Telegram is a third-party service independent from Studio Monmal.
+Information transmitted to Telegram is subject to Telegram's own
 privacy policy and terms of service.
 </p>
 
 <p>
-Studio Monmal does not separately copy or store
-Telegram messages on its own servers.
+Telegram systems or servers may operate outside the Republic of Korea.
+When users enable Telegram notifications, related information may therefore
+be processed outside Korea according to Telegram's current infrastructure
+and policies.
+</p>
+
+<p>
+Users can stop future transmissions through Line Reminder by disabling
+the Telegram feature.
+Messages already delivered to Telegram are not automatically deleted.
+</p>
+
+<p>
+Studio Monmal does not separately copy or store Telegram messages
+on its own servers.
 </p>
 
 
-<h2>5. Attachments</h2>
+<h2>5. Telegram Credentials</h2>
 
 <p>
-Images, PDFs, and documents selected by the user
-may be copied to the app's internal storage.
+Telegram Bot Token and Chat ID values entered by users are stored
+in application-private local storage on the user's device.
+</p>
+
+<p>
+These values may be included in encrypted integrated backup files
+created by the user.
+Users should protect their Bot Tokens, backup files, and backup passwords.
+</p>
+
+
+<h2>6. Attachments</h2>
+
+<p>
+Images, PDFs, and documents selected by users may be copied
+to application-private internal storage.
 </p>
 
 <p>
 Line Reminder uses Android system file pickers and the Photo Picker
-and does not request broad access to all files stored on the device.
+and does not request broad access to all files on the user's device.
 </p>
 
 
-<h2>6. Backup and Restore</h2>
+<h2>7. Backup and Restore</h2>
 
 <p>
-Users may export application data using
-Line Reminder's integrated backup feature.
+Users may export their application data using Line Reminder's
+integrated backup function.
 </p>
 
 <p>
-Backups may contain mobile line data, schedules,
-settings, attachments, and Telegram settings.
+Backup files may include mobile line data, schedules,
+settings, attachments, and Telegram configuration,
+including the Bot Token and Chat ID.
 </p>
 
 <p>
-Backup files are encrypted using a password chosen by the user.
+Integrated backup files are encrypted using AES-256-GCM
+with a password supplied by the user.
 </p>
 
 <p>
-The user chooses the storage location through
-Android's system file picker.
+Users select the destination using Android's system file picker.
 If an external provider such as Google Drive is selected,
-that provider's policies may also apply.
+that provider's privacy and security policies also apply.
 </p>
 
 <p>
-Exported backups are not automatically deleted
-when Line Reminder is uninstalled.
+Studio Monmal does not upload or retain these backup files
+on its own servers.
 </p>
 
 
-<h2>7. Google Play Purchases</h2>
+<h2>8. Google Play Purchases</h2>
 
 <p>
-Line Reminder may offer certain features
-through Google Play in-app purchases.
+Line Reminder may provide certain features through
+non-consumable, one-time Google Play in-app purchases.
 </p>
 
 <p>
-Payments and payment-method information are processed by Google Play.
+Payments and payment-method information are processed directly by Google Play.
 Studio Monmal does not directly collect or store users'
-credit card numbers or Google Play payment details.
+credit card numbers or Google Play payment-method details.
 </p>
 
 <p>
-The app may check purchase-status information provided by Google Play
-to determine whether purchased features are available.
+Line Reminder may check product ownership and purchase-status information
+provided by Google Play to determine whether purchased functionality is available.
 </p>
 
 <p>
 Purchase entitlements are not included in normal Line Reminder backups.
-Ownership of purchased products is determined using
-purchase information associated with the Google Play account.
+Ownership is determined using information associated with the relevant Google Play account.
 </p>
 
 
-<h2>8. Android Permissions</h2>
+<h2>9. Security Measures</h2>
+
+<p>
+Studio Monmal uses measures appropriate to the current application architecture,
+including:
+</p>
+
+<ul>
+  <li>Application-private local storage for ordinary app data and attachments</li>
+  <li>No broad storage access permission</li>
+  <li>AES-256-GCM encryption for integrated backup files</li>
+  <li>Password-based key derivation for encrypted backups</li>
+  <li>HTTPS communication with the Telegram Bot API</li>
+  <li>No Studio Monmal user-data collection server</li>
+  <li>No advertising or behavioral analytics SDKs</li>
+</ul>
+
+<div class="notice">
+  No method of electronic storage or Internet transmission can guarantee absolute security.
+  Users should protect their device lock, Google account, Telegram Bot Token,
+  and backup passwords.
+</div>
+
+
+<h2>10. Android Permissions</h2>
 
 <p>
 Line Reminder may use Android permissions for:
@@ -474,8 +783,8 @@ Line Reminder may use Android permissions for:
 <ul>
   <li>Posting notifications</li>
   <li>Scheduling time-sensitive alarms</li>
-  <li>Restoring alarm schedules after a device reboot</li>
-  <li>Internet access for services such as Telegram notifications</li>
+  <li>Restoring scheduled notifications after device reboot or time changes</li>
+  <li>Internet access for Telegram Bot API communication</li>
 </ul>
 
 <p>
@@ -483,41 +792,98 @@ Line Reminder does not use Android Notification Listener permission
 to read notifications from other applications.
 </p>
 
-
-<h2>9. Data Deletion</h2>
-
 <p>
-Users may edit or delete information they entered into the app.
-</p>
-
-<p>
-Uninstalling Line Reminder removes locally stored application data
-according to Android's standard app-removal process.
-</p>
-
-<p>
-Externally exported backup files and messages already sent to Telegram
-are not automatically removed when the application is uninstalled.
+It also does not request permission to read SMS or MMS messages.
 </p>
 
 
-<h2>10. Changes to This Policy</h2>
+<h2>11. Data Retention</h2>
 
 <p>
-This Privacy Policy may be updated when application functionality
+Information stored by the user within Line Reminder may remain on the device
+until the user deletes it, clears application data, or uninstalls the application.
+</p>
+
+<p>
+Studio Monmal does not retain this information on its own servers.
+</p>
+
+<p>
+Backup files exported outside the application may remain at the selected destination
+until the user deletes them.
+</p>
+
+<p>
+Retention of information transmitted to Telegram is governed by Telegram's policies
+and the user's Telegram configuration.
+</p>
+
+<p>
+Google Play purchase information is retained and processed according to Google's policies.
+</p>
+
+
+<h2>12. Data Deletion</h2>
+
+<p>
+Users may edit or delete information through the functions provided within the application.
+</p>
+
+<p>
+Uninstalling Line Reminder or clearing its application data removes locally stored
+application data according to Android's standard application-data handling.
+</p>
+
+<p>
+The following may remain after application removal:
+</p>
+
+<ul>
+  <li>Backup files exported by the user</li>
+  <li>Messages previously delivered to Telegram</li>
+  <li>Purchase records maintained by Google Play</li>
+</ul>
+
+<p>
+These items must be managed through the relevant storage provider,
+Telegram, or Google Play.
+</p>
+
+
+<h2>13. Children's Privacy</h2>
+
+<p>
+Line Reminder is not specifically designed as a service directed at children.
+</p>
+
+<p>
+The applicable target-audience settings are those declared
+for the application in Google Play Console.
+</p>
+
+
+<h2>14. Changes to This Policy</h2>
+
+<p>
+This Privacy Policy may be updated if application functionality
 or data-processing practices change.
 </p>
 
 <p>
-Important changes may be communicated through this page
-or through application updates.
+Important changes may be communicated through this page or application updates,
+and the "Last updated" date above will be revised.
 </p>
 
 
-<h2>11. Contact</h2>
+<h2>15. Contact</h2>
+
+<p>
+For privacy and application data-handling inquiries:
+</p>
 
 <p>
 Developer: Studio Monmal<br>
+Application: Line Reminder (회선알라미)<br>
 Email:
 <a href="mailto:studiomonmal@gmail.com">
 studiomonmal@gmail.com
